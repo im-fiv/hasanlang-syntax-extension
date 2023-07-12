@@ -1,4 +1,5 @@
 # Extension builds
+/builds
 *.vsix
 
 # VSCode folder
