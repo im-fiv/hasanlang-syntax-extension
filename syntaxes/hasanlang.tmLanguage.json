@@ -1,0 +1,132 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Hasanlang",
+	"patterns": [
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#numbers"
+		},
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#punctuation"
+		},
+		{
+			"include": "#variables"
+		},
+		{
+			"include": "#functions"
+		},
+		{
+			"include": "#classes"
+		},
+		{
+			"include": "#types"
+		}
+	],
+	"repository": {
+		"comments": {
+			"patterns": [
+				{
+					"name": "comment.line.double-slash.hasanlang",
+					"match": "//.*$"
+				},
+				{
+					"name": "comment.block.hasanlang",
+					"begin": "/\\*",
+					"end": "\\*/"
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.hasanlang",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.hasanlang",
+					"match": "\\\\."
+				}
+			]
+		},
+		"numbers": {
+			"patterns": [
+			  {
+				"name": "constant.numeric.hasanlang",
+				"match": "\\b\\d+(\\.\\d+)?\\b"
+			  }
+			]
+		},
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.hasanlang",
+					"match": "\\b(do|end|return)\\b"
+				},
+				{
+					"name": "keyword.declaration.hasanlang",
+					"match": "\\b(var|func|class|declare|type)\\b"
+				},
+				{
+					"name": "keyword.other.hasanlang",
+					"match": "\\b(this)\\b"
+				}
+			]
+		},
+		"punctuation": {
+			"patterns": [
+				{
+					"name": "punctuation.separator.hasanlang",
+					"match": "[,;.]"
+				},
+				{
+					"name": "punctuation.bracket.hasanlang",
+					"match": "[\\[\\](){}]"
+				},
+				{
+					"name": "punctuation.operator.hasanlang",
+					"match": "\\+|->|\\*|/|-|%"
+				}
+			]
+		},
+		"variables": {
+			"patterns": [
+				{
+					"name": "variable.hasanlang",
+					"match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b"
+				}
+			]
+		},
+		"functions": {
+			"patterns": [
+				{
+					"name": "entity.name.function.hasanlang",
+					"match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b(?=\\()"
+				}
+			]
+		},
+		"classes": {
+			"patterns": [
+				{
+					"name": "entity.name.type.class.hasanlang",
+					"match": "\\bclass\\b\\s+([a-zA-Z_][a-zA-Z0-9_]*)(?![()])"
+				}
+			]
+		},
+		"types": {
+			"patterns": [
+				{
+					"name": "entity.name.type.hasanlang",
+					"match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b(?=\\[|<)"
+				}
+			]
+		}
+	},
+	"scopeName": "source.hsl"
+}

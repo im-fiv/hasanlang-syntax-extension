@@ -1,0 +1,26 @@
+{
+  "name": "hasanlang",
+  "displayName": "Hasanlang Syntax Highlighting",
+  "description": "Syntax highlighting for Hasanlang",
+  "version": "0.0.2",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "repository": "https://github.com/greenbush5/hasanlang-syntax-extension",
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "hasanlang",
+      "aliases": ["Hasanlang", "hasanlang"],
+      "extensions": [".hsl",".hasanlang",".hasan"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "hasanlang",
+      "scopeName": "source.hsl",
+      "path": "./syntaxes/hasanlang.tmLanguage.json"
+    }]
+  }
+}
