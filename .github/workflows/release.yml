@@ -23,7 +23,7 @@ jobs:
         run: npm i @vscode/vsce
 
       - name: Package extension
-        run: npx vsce package
+        run: echo "name=$(npx vsce package --yarn | grep -o '[^/]*\.vsix$')" >> $GITHUB_ENV
         id: package
 
       - name: Create GitHub release
