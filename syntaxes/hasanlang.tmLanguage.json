@@ -28,7 +28,16 @@
 		},
 		{
 			"include": "#types"
-		}
+		},
+        {
+            "include": "#annotations"
+        },
+        {
+            "include": "#operators"
+        },
+        {
+            "include": "#genericTypes"
+        }
 	],
 	"repository": {
 		"comments": {
@@ -67,7 +76,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.hasanlang",
-					"match": "\\b(do|end|return)\\b"
+					"match": "\\b(do|end|return|declare|var|type|class|func)\\b"
 				},
 				{
 					"name": "keyword.declaration.hasanlang",
@@ -75,7 +84,7 @@
 				},
 				{
 					"name": "keyword.other.hasanlang",
-					"match": "\\b(this)\\b"
+					"match": "\\b(this|as)\\b"
 				}
 			]
 		},
@@ -87,11 +96,11 @@
 				},
 				{
 					"name": "punctuation.bracket.hasanlang",
-					"match": "[\\[\\](){}]"
+					"match": "[\\[\\](){}<>]"
 				},
 				{
 					"name": "punctuation.operator.hasanlang",
-					"match": "\\+|->|\\*|/|-|%"
+					"match": "\\+|->|\\*|/|-|%|="
 				}
 			]
 		},
@@ -126,7 +135,35 @@
 					"match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b(?=\\[|<)"
 				}
 			]
-		}
+		},
+        "annotations": {
+            "patterns": [
+                {
+                    "name": "storage.modifier.annotation.hasanlang",
+                    "match": "#\\[.+\\]"
+                }
+            ]
+        },
+        "operators": {
+            "patterns": [
+                {
+                    "name": "keyword.operator.arrow.hasanlang",
+                    "match": "->"
+                },
+                {
+                    "name": "keyword.operator.dot.hasanlang",
+                    "match": "\\."
+                }
+            ]
+        },
+        "genericTypes": {
+            "patterns": [
+                {
+                    "name": "entity.name.type.generic.hasanlang",
+                    "match": "<[a-zA-Z_][a-zA-Z0-9_]*>"
+                }
+            ]
+        }
 	},
 	"scopeName": "source.hsl"
 }
