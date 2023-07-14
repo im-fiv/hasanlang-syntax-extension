@@ -2,7 +2,7 @@
   "name": "hasanlang",
   "displayName": "Hasanlang Syntax Highlighting",
   "description": "Syntax highlighting for Hasanlang",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "engines": {
     "vscode": "^1.80.0"
   },
