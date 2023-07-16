@@ -76,7 +76,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.hasanlang",
-					"match": "\\b(do|end)\\b"
+					"match": "\\b(do|end|while|if|then)\\b"
 				},
 				{
 					"name": "keyword.declaration.hasanlang",
@@ -85,6 +85,18 @@
 				{
 					"name": "keyword.other.hasanlang",
 					"match": "\\b(this|as)\\b"
+				},
+				{
+					"name": "keyword.boolean.hasanlang",
+					"match": "\\b(true|false)\\b"
+				},
+				{
+					"name": "keyword.logical.hasanlang",
+					"match": "\\b(not|and|or)\\b"
+				},
+				{
+					"name": "keyword.control.else.hasanlang",
+					"match": "\\b(elseif|else|break)\\b"
 				}
 			]
 		},
@@ -153,7 +165,11 @@
                 {
                     "name": "keyword.operator.dot.hasanlang",
                     "match": "\\."
-                }
+                },
+				{
+					"name": "keyword.operator.relational.hasanlang",
+					"match": ">|<|>=|<=|=="
+				}
             ]
         },
         "genericTypes": {
