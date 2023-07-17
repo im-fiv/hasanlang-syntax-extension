@@ -76,11 +76,11 @@
 			"patterns": [
 				{
 					"name": "keyword.control.hasanlang",
-					"match": "\\b(do|end|while|if|then)\\b"
+					"match": "\\b(do|end|while|if|then|for|in)\\b"
 				},
 				{
 					"name": "keyword.declaration.hasanlang",
-					"match": "\\b(var|func|class|declare|type|return|enum|pub|static)\\b"
+					"match": "\\b(var|func|class|declare|type|return|enum|pub|const|static|interface|module|use|impl)\\b"
 				},
 				{
 					"name": "keyword.other.hasanlang",
