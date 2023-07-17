@@ -80,7 +80,7 @@
 				},
 				{
 					"name": "keyword.declaration.hasanlang",
-					"match": "\\b(var|func|class|declare|type|return|enum)\\b"
+					"match": "\\b(var|func|class|declare|type|return|enum|pub|static)\\b"
 				},
 				{
 					"name": "keyword.other.hasanlang",
