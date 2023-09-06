@@ -112,7 +112,7 @@
 				},
 				{
 					"name": "punctuation.operator.hasanlang",
-					"match": "\\+|->|\\*|/|-|%|=|\\!"
+					"match": "\\+|->|\\*|/|-|%|=|\\!|::"
 				}
 			]
 		},
