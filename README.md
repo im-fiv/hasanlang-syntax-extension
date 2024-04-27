@@ -1,13 +1,13 @@
 # Hasanlang Syntax Extension
-![Build Status](https://github.com/greenbush5/hasanlang/actions/workflows/build.yml/badge.svg)
+![Build Status](https://github.com/im-fiv/hasanlang/actions/workflows/build.yml/badge.svg)
 
-This is a VS Code extension for [Hasanlang](https://github.com/greenbush5/hasanlang)
+This is a VS Code extension for [Hasanlang](https://github.com/im-fiv/hasanlang)
 
 ## Building
 You can directly download the latest version from releases. Alternatively, if you want to build it yourself:
 
 ```bash
-git clone https://github.com/greenbush5/hasanlang-syntax-extension.git
+git clone https://github.com/im-fiv/hasanlang-syntax-extension.git
 cd hasanlang-syntax-extension
 npm i @vscode/vsce
 npx vsce package
